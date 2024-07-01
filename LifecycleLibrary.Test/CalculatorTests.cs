@@ -7,19 +7,20 @@ using Xunit;
 
 namespace LifecycleLibrary.Test
 {
-    public class CalculatorTests
+  public class CalculatorTests
+  {
+    [Theory]
+    [InlineData(4, 2, 2)]
+    [InlineData(4, 0, 0)]
+    public void Divide_SimpleValuesShouldCalculate(double x, double y, double expected)
     {
-        [Theory]
-        [InlineData(4, 2, 2)]
-        public void Divide_SimpleValuesShouldCalculate(double x, double y, double expected)
-        {
-            // Arrange
+      // Arrange
 
-            // Act
-            double actual = Calculator.Divide(x, y);
+      // Act
+      double actual = Calculator.Divide(x, y);
 
-            // Assert
-            Assert.Equal(expected, actual);
-        }
+      //Assert
+      Assert.Equal(expected, actual);
     }
+  }
 }

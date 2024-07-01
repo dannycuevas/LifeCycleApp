@@ -7,7 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{67CB8060-F4C4-4C43-8DF6-54363411527E}</ProjectGuid>
+    <ProjectGuid>{D64F946A-720A-4964-8F8D-813D1B0EBC65}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LifecycleLibrary.Test</RootNamespace>
@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LifecycleLibrary\LifecycleLibrary.csproj">
-      <Project>{b4d088d8-d44a-439e-aa08-e089829c9866}</Project>
+      <Project>{b25abadf-80ba-4986-8f8d-928009d724a5}</Project>
       <Name>LifecycleLibrary</Name>
     </ProjectReference>
   </ItemGroup>

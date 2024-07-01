@@ -10,23 +10,23 @@ using System.Configuration;
 
 namespace LifecycleLibrary
 {
-    public class SimpleDataAccess
+  public class SimpleDataAccess
+  {
+    private static string GetConnectionString(string name = "UserDatabase")
     {
-        private static string GetConnectionString(string name = "UserDatabase")
-        {
-            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
-        }
-
-        public static List<PersonModel> LoadPeople()
-        {
-            string sql = "select * from dbo.Person";
-
-            using (IDbConnection cnn = new SqlConnection(GetConnectionString()))
-            {
-                var people = cnn.Query<PersonModel>(sql).ToList();
-
-                return people;
-            }
-        }
+      return ConfigurationManager.ConnectionStrings[name].ConnectionString;
     }
+
+    public static List<PersonModel> LoadPeople()
+    {
+      string sql = "select * from dbo.Person";
+
+      using (IDbConnection cnn = new SqlConnection(GetConnectionString()))
+      {
+        var people = cnn.Query<PersonModel>(sql).ToList();
+
+        return people;
+      }
+    }
+  }
 }
