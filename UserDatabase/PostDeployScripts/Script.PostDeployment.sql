@@ -11,6 +11,6 @@ Post-Deployment Script Template
 */
 DELETE FROM dbo.Person;
 INSERT INTO dbo.Person (FirstName, LastName)
-VALUES ('Daniel', 'Cuevas'),
-('Bjork', 'Cuevas'),
-('Alex', 'Pereira');
+VALUES ('Tim', 'Corey'),
+('Sue', 'Storm'),
+('Bob', 'Smith');
