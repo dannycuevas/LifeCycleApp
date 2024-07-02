@@ -1,3 +1,7 @@
+# My Changes
+
+[![Build status](https://dev.azure.com/dannycuevax/LifeCycleProject/_apis/build/status/LifeCycleProjectBuild)](https://dev.azure.com/dannycuevax/LifeCycleProject/_build/latest?definitionId=7)
+
 # Build Status
 - Development Build: ![Development Enviroment Build Status](https://iamtimcorey.visualstudio.com/LifecycleProject/_apis/build/status/LifecycleProjectBuild?branchName=master "Development Enviroment")
 - Staging Build: ![Staging Environment Build Status](https://iamtimcorey.visualstudio.com/LifecycleProject/_apis/build/status/LifecycleProjectBuild?branchName=staging "Staging Environment")
